@@ -3,6 +3,7 @@ const filmSchema = require("../models/film");
 
 const router = express.Router();
 
+
 //Agregar pelicula
 router.post('/films', (req, res) =>{
     const film = filmSchema(req.body);
